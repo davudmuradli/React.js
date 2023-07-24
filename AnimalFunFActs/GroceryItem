@@ -1,0 +1,12 @@
+import React from 'react';
+
+function GroceryItem (props) {
+  function handleClick(){
+    alert('Added ' + props.name + ' to the cart!');
+  }
+  return(
+    <button onClick={handleClick}>{props.name}</button>
+  )
+}
+
+export default GroceryItem;
